@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrayerRipple — Account Deletion</title>
+  <meta name="description" content="Instructions for requesting deletion of your PrayerRipple account and associated data." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header container">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="PrayerRipple logo" class="logo" />
+      <span class="brand-name">PrayerRipple</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#links">Get the app</a>
+      <a class="btn btn-outline" href="https://login.prayerripple.com">Admin Login</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="container" style="padding-top: 60px; padding-bottom: 60px; max-width: 750px;">
+      <h1 style="margin-bottom: 20px;">Account Deletion Request</h1>
+
+      <p class="lead" style="margin-bottom: 30px;">
+        You may request deletion of your PrayerRipple account and associated data at any time.
+        This page explains how to submit a request and what information is removed or retained.
+      </p>
+
+      <h2 style="margin-top: 40px;">How to Request Deletion</h2>
+      <p>
+        To delete your account, send an email to:
+      </p>
+      <p style="font-size: 1.2em; margin: 10px 0 20px 0;">
+        <strong><a href="mailto:support@prayerripple.com">support@prayerripple.com</a></strong>
+      </p>
+
+      <p>Please include:</p>
+      <ul>
+        <li>The email address associated with your PrayerRipple account</li>
+        <li>A brief statement requesting account deletion</li>
+      </ul>
+
+      <p style="margin-top: 10px;">
+        Once your request is received, your account will be permanently deleted within
+        <strong>48 hours</strong>.
+      </p>
+
+      <h2 style="margin-top: 50px;">What Data Will Be Deleted</h2>
+      <p>The following data will be permanently removed:</p>
+      <ul>
+        <li>Your account profile</li>
+        <li>Prayer requests you have posted</li>
+        <li>Praise reports</li>
+        <li>Uploaded images and media</li>
+        <li>Friend connections</li>
+        <li>Notification history and activity logs</li>
+      </ul>
+
+      <h2 style="margin-top: 50px;">What Data May Be Retained</h2>
+      <p>
+        For legal or security reasons, some minimal data may be retained:
+      </p>
+      <ul>
+        <li>Billing or transaction records (if applicable)</li>
+        <li>Security and server logs (retained up to 30 days)</li>
+      </ul>
+
+      <p>No retained data is used for any purpose after deletion.</p>
+
+      <h2 style="margin-top: 50px;">After Your Account Is Deleted</h2>
+      <p>
+        Account deletion is permanent. If you return to PrayerRipple in the future,
+        you will need to create a new account.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer container">
+    <div>© <span id="year"></span> PrayerRipple • Happy Hardens Ministries, LLC</div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:support@prayerripple.com">Support</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
