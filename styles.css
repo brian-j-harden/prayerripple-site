@@ -17,6 +17,9 @@ body{
   color:var(--ink);
   background: radial-gradient(1200px 600px at 75% -20%, rgba(14, 165, 233, .2), transparent 60%), 
              linear-gradient(180deg, #0b1220, #0b1220 300px, #0c1627 100%);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 a{color:var(--ink); text-decoration:none}
 a:focus{outline: none; box-shadow: var(--ring)}
@@ -53,7 +56,13 @@ a:focus{outline: none; box-shadow: var(--ring)}
 .site-header{
   display:flex;align-items:center;justify-content:space-between;gap:16px;
 }
-.brand{display:flex;align-items:center;gap:10px}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:inherit;
+}
 .brand-name{font-weight:800;font-size:1.1rem;letter-spacing:.2px}
 .logo{height:36px;width:auto}
 
@@ -74,6 +83,7 @@ a:focus{outline: none; box-shadow: var(--ring)}
 .cta-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:16px}
 
 .hero-art{position:relative; min-height: 420px}
+
 .phone{
   position: relative;
   width: min(360px, 92%);
@@ -82,6 +92,10 @@ a:focus{outline: none; box-shadow: var(--ring)}
   background: #111827;
   padding: 14px;
   box-shadow: 0 20px 80px rgba(0,0,0,.5);
+  max-height: 66vh;          /* ≈ 2/3 of viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .phone img{
   display: block;
@@ -90,6 +104,7 @@ a:focus{outline: none; box-shadow: var(--ring)}
   border-radius: 18px;
   object-fit: contain;   /* NEVER crop */
   background: transparent;
+  max-height: calc(66vh - 28px); /* account for padding */
 }
 .gradient-blob{
   position:absolute; inset:auto 0 0 0; height: 60%; 
