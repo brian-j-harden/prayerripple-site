@@ -169,6 +169,25 @@ a:focus{outline: none; box-shadow: var(--ring)}
 
 .store-badge img{height:40px; width:auto; display:block}
 
+.store-badges.large {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.store-badges.large img {
+  height: 72px;      /* ⬅️ BIG */
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .store-badges.large img {
+    height: 64px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 900px){
   .hero{grid-template-columns: 1fr; padding-top:20px}
