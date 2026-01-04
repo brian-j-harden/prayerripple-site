@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Download PrayerRipple</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Prevent caching so store links can be updated later -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="robots" content="noindex" />
+
+  <script>
+    (function () {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Android
+      if (/android/i.test(ua)) {
+        setTimeout(() => {
+            window.location.replace(
+            "https://play.google.com/store/apps/details?id=com.prayerripple.app"
+            );
+        }, 150);
+        return;
+      }
+
+      // iOS
+      if (/iPad|iPhone|iPod/.test(ua)) {
+        setTimeout(() => {
+            window.location.replace(
+            "https://apps.apple.com/us/app/prayerripple/id6755751198"
+            );
+        }, 150);
+        return;
+      }
+
+      // Desktop / fallback
+        setTimeout(() => {
+            window.location.replace("https://prayerripple.com");
+        }, 150);
+    })();
+  </script>
+</head>
+
+<body>
+    <h2>Get PrayerRipple</h2>
+    <p style="opacity: 0.7; font-size: 0.9rem;">
+        Redirecting you to the correct app store…
+    </p>
+    <p>If you’re not redirected automatically, choose your platform:</p>
+    
+    <p>
+      <a href="https://apps.apple.com/us/app/prayerripple/id6755751198">
+        Download on the App Store
+      </a><br /><br />
+    
+      <a href="https://play.google.com/store/apps/details?id=com.prayerripple.app">
+        Get it on Google Play
+      </a>
+    </p>
+</body>
+</html>
